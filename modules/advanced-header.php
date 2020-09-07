@@ -11,7 +11,7 @@ class advancedHeaderModule extends FLBuilderModule {
       'category' => __( 'Cyne', 'fl-builder' ),
       'dir' => CYNE_MODULES_DIR . 'modules/',
       'url' => CYNE_MODULES_URL . 'cyne-modules/',
-      'icon' => 'button.svg',
+      'icon' => 'text.svg',
       'editor_export' => true, // Defaults to true and can be omitted.
       'enabled' => true, // Defaults to true and can be omitted.
       'partial_refresh' => false, // Defaults to false and can be omitted.
