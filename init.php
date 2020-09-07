@@ -10,6 +10,7 @@ define( 'CYNE_MODULES_URL', plugins_url( '/', __FILE__ ) );
 
 function cyne_load_modules() {
    if ( class_exists( 'FLBuilder' ) ) {
+      // Add modules here..
       require_once 'modules/advanced-header.php';
    }
 }
