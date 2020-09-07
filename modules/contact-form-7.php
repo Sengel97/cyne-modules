@@ -22,17 +22,7 @@ class cf7 extends FLBuilderModule {
 
 }
 
-global $form_titles;
-
-$args = array('post_type' => 'wpcf7_contact_form', 'posts_per_page' => -1);
-$cf7Forms = get_posts( $args );
-$post_ids = wp_list_pluck( $cf7Forms , 'ID' );
-$form_titles = wp_list_pluck( $cf7Forms , 'post_title' );
-
-return $post_ids;
-return $form_titles;
-
-$contact_form_titles = array('test', 'test 2', 'test 3');
+require_once CYNE_MODULES_DIR . 'modules/includes/functions.php';
 
 FLBuilder::register_module( 'cf7', array(
   'general-tab' => array(
@@ -44,12 +34,7 @@ FLBuilder::register_module( 'cf7', array(
           'contactForm7_field'     => array(
             'label' => __( 'Select Form', 'fl-builder' ),
             'type' => 'select',
-            'options' => array(
-              'option1' => '1',
-              'option2' => '2',
-              'option3' => '3',
-              'option4' => '4',
-              ),
+            'options' => cf7_func()
           )
         )
       )
