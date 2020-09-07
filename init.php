@@ -12,6 +12,7 @@ function cyne_load_modules() {
    if ( class_exists( 'FLBuilder' ) ) {
       // Add modules here..
       require_once 'modules/advanced-header.php';
+      require_once 'modules/contact-form-7.php';
    }
 }
 add_action( 'init', 'cyne_load_modules' );
