@@ -9,8 +9,8 @@ class advancedHeaderModule extends FLBuilderModule {
       'description' => __( 'An Advanced Header module!', 'fl-builder' ),
       // 'group' => __( 'Standard Modules', 'fl-builder' ),
       'category' => __( 'Cyne', 'fl-builder' ),
-      'dir' => CYNE_MODULES_DIR . 'modules/',
-      'url' => CYNE_MODULES_URL . 'cyne-modules/',
+      'dir' => CYNE_MODULES_DIR . 'modules/advanced-header/',
+      'url' => CYNE_MODULES_URL . 'modules/advanced-header/',
       'icon' => 'text.svg',
       'editor_export' => true, // Defaults to true and can be omitted.
       'enabled' => true, // Defaults to true and can be omitted.

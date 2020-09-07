@@ -9,12 +9,11 @@ class cf7 extends FLBuilderModule {
       'description'     => __( 'A totally awesome module!', 'fl-builder' ),
       // 'group'           => __( 'Standard Modules', 'fl-builder' ),
       'category'        => __( 'Cyne', 'fl-builder' ),
-      'dir'             => CYNE_MODULES_DIR . 'modules/',
-      'url'             => CYNE_MODULES_URL . 'cyne-modules/',
+      'dir'             => CYNE_MODULES_DIR . 'modules/contact-form-7/',
+      'url'             => CYNE_MODULES_URL . 'modules/contact-form-7/',
       'icon'            => 'schedule.svg',
       'editor_export'   => true, // Defaults to true and can be omitted.
       'enabled'         => true, // Defaults to true and can be omitted.
-      'partial_refresh' => true, // Defaults to false and can be omitted.
     ));
 
     
@@ -22,7 +21,7 @@ class cf7 extends FLBuilderModule {
 
 }
 
-require_once CYNE_MODULES_DIR . 'modules/includes/functions.php';
+require_once CYNE_MODULES_DIR . 'functions.php';
 
 FLBuilder::register_module( 'cf7', array(
   'general-tab' => array(
@@ -31,7 +30,7 @@ FLBuilder::register_module( 'cf7', array(
       'general-section' => array(
       // 'title'         => __( '', 'fl-builder' ), ??
         'fields' => array(
-          'contactForm7_field'     => array(
+          'cf7_form_select'     => array(
             'label' => __( 'Select Form', 'fl-builder' ),
             'type' => 'select',
             'options' => cf7_func()
