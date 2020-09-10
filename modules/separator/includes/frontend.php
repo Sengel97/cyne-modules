@@ -1,12 +1,13 @@
-<div class="cyne-advanced-header <?php echo $settings->advancedHeaderModule_align; ?>">
-    <h1><?php echo $settings->advancedHeaderModule_field; ?></h1>
-    <!-- <span style="color:red"><?php // echo $module->example_method(); ?></span> -->
-</div>
+<?php
 
-<div class="cyne-seperator">
-    <?php echo $settings->seperator; ?>
-</div>
+$width = $settings->separator_width;
+$height = $settings->separator_height;
+$align = $settings->separator_alignment;
+$color = $settings->separator_color;
 
-<div class="cyne-contact-form-7">
-    <?php echo $settings->contactForm7_field; ?>
-</div>
+?>
+<div class="cyne-module-separator" style="<?php echo 'text-align: '.$align.'; '; ?>"><span class="cyne-separator" style="<?php 
+
+    echo 'width: '.$width.'%; ' . 'height: '.$height.'px; ' . 'text-align: '.$align.'; ' . 'background-color: '.$color.';';
+
+?>"></span></div>

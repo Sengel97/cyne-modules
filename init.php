@@ -12,8 +12,10 @@ function cyne_load_modules() {
    if ( class_exists( 'FLBuilder' ) ) {
       // Add modules here..
       require_once 'modules/separator.php';
+      require_once 'modules/empty-space.php';
       require_once 'modules/advanced-header.php';
       require_once 'modules/contact-form-7.php';
+      require_once 'modules/call-to-action.php';
    }
 }
 add_action( 'init', 'cyne_load_modules' );

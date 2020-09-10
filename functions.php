@@ -1,6 +1,4 @@
 <?php 
-
-
 function cf7_func() {
     
     $options = array( '' => __('None', 'cyne-modules') );

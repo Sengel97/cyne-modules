@@ -27,9 +27,25 @@ FLBuilder::register_module( 'separator', array(
       'general-section' => array(
         // 'title'         => __( '', 'fl-builder' ), ??
         'fields' => array(
-          'separator_field' => array(
-            'type' => 'checkbox',
-            'label' => __( 'Separator', 'fl-builder' ),
+          'separator_width' => array(
+            'type' => 'text',
+            'label' => __( 'Separator Width in %', 'fl-builder' ),
+            'default' => '100',
+          ),
+          'separator_height' => array(
+            'type' => 'text',
+            'label' => __( 'Separator Height in px', 'fl-builder' ),
+            'default' => '1',
+          ),
+          'separator_alignment'    => array(
+            'type'      => 'align',
+            'label'     => 'Separator Alignment',
+            'default'   => 'center',
+          ),
+          'separator_color' => array(
+            'type' => 'text',
+            'label' => __( 'Separator Color, eg: #e8e8e8', 'fl-builder' ),
+            'default' => '#e8e8e8',
           ),
         )
       )
