@@ -33,7 +33,7 @@ FLBuilder::register_module( 'cf7', array(
           'cf7_form_select'     => array(
             'label' => __( 'Select Form', 'fl-builder' ),
             'type' => 'select',
-            'options' => cf7_func()
+            'options' => cf7_func(),
           )
         )
       )

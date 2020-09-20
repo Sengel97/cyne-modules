@@ -1,4 +1,12 @@
-<div class="cyne-advanced-header <?php echo $settings->advancedHeaderModule_align; ?>">
-    <h1><?php echo $settings->advancedHeaderModule_field; ?></h1>
-    <!-- <span style="color:red"><?php // echo $module->example_method(); ?></span> -->
+<div class="cyne-module-menu">
+    <?php 
+    // label = menu_select
+        if ( $settings->menu_select ) {
+            // echo do_shortcode( '[menu id='.absint( $settings->menu_select ).' ajax=true]' );
+
+            wp_nav_menu( array(
+                'menu' => $settings->menu_select,
+            ) );
+        }
+    ?>
 </div>

@@ -16,6 +16,16 @@ function cyne_load_modules() {
       require_once 'modules/advanced-header.php';
       require_once 'modules/contact-form-7.php';
       require_once 'modules/call-to-action.php';
+      require_once 'modules/menu.php';
    }
 }
 add_action( 'init', 'cyne_load_modules' );
+
+
+function print_menu_shortcode($atts, $content = null) {
+
+   extract(shortcode_atts(array( 'id' => null, 'class' => null ), $atts));
+   return wp_nav_menu( array('menu_id' => $id, 'menu_class' => $class, 'echo' => false ) );
+
+}
+add_shortcode('menu', 'print_menu_shortcode');

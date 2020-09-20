@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+// Contact Form 7
 function cf7_func() {
     
     $options = array( '' => __('None', 'cyne-modules') );
@@ -13,4 +15,19 @@ function cf7_func() {
 
     return $options;
 
+}
+
+
+// Menu
+function menu_func() {
+
+    $menu_options = array( '' => __('None', 'cyne-modules') );
+
+    $menus = wp_get_nav_menus();
+
+    foreach($menus as $menu) {
+        $menu_options[$menu->term_id] = $menu->name;
+    }
+
+    return $menu_options;
 }
