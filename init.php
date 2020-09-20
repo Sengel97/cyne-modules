@@ -17,6 +17,7 @@ function cyne_load_modules() {
       require_once 'modules/contact-form-7.php';
       require_once 'modules/call-to-action.php';
       require_once 'modules/menu.php';
+      require_once 'modules/posts.php';
    }
 }
 add_action( 'init', 'cyne_load_modules' );
