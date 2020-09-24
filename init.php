@@ -18,6 +18,8 @@ function cyne_load_modules() {
       require_once 'modules/call-to-action.php';
       require_once 'modules/menu.php';
       require_once 'modules/posts.php';
+      require_once 'modules/advanced-button-group.php';
+      require_once 'modules/advanced-button.php';
    }
 }
 add_action( 'init', 'cyne_load_modules' );

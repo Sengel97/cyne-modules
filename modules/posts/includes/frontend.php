@@ -10,9 +10,9 @@ if ( $posts ) {
         setup_postdata( $post ); 
         ?>
         
-        <h2><a href="<?php echo $post->guid; ?>"><?php echo $post->post_title; ?></a></h2>
+        <h2 class="post-title"><a href="<?php echo $post->guid; ?>"><?php echo $post->post_title; ?></a></h2>
         
-        <?php the_content(); ?>
+        <div class="post-content"><?php the_content(); ?></div>
 
         <a class="btn btn-primary" href="<?php echo $post->guid; ?>"><?php echo __('Read more', 'cyne'); ?></a>
 
