@@ -4,6 +4,7 @@
  * Description: Custom modules for the Beaver Builder Plugin tailored for the Cyne Theme.
  * Author: Enformatic
  * Author URI: https://enformatic.de/
+ * Version: 1.0.2
  */
 define( 'CYNE_MODULES_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CYNE_MODULES_URL', plugins_url( '/', __FILE__ ) );
